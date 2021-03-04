@@ -16,6 +16,7 @@ To make a new project, copy Boilerplate.js and change the name to whatever your 
     Long is going to be the Whole ass write up and the main thing youre going to work with. As of right now it is set up to be able to simply take what you put in and 
         translate it into html with a bit of my own translation. No need to worry about break tags to try to get the spacing between paragraphs, just hit enter and itll translate for you.
             To make a header, start the line with "HEADD" and everything before the next time you hit enter will be the header
+            To make and image simply start the line with "IMG" and the path to the image, for rule of thumb '/image/ANYfOLDERS/IMAGEfILEnAME'
             To make a link, surround the text you want to have with "<a>" Like you would html, but for this link just make the destination url the first thing you have typed  after that tag. Be sure to check the links start with "https:www." cause otherwise things bad happen
 
 Once you have your project's file made, travel back into Info.js. Copy and paste (import proj from './proj';) and change "proj" to the what you've named your file and follow tagging instructions below.
