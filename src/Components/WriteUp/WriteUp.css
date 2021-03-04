@@ -1,0 +1,28 @@
+p {
+    margin: 0;
+    margin-left:50px;
+    text-align: left;
+}
+
+div.spacing{
+    display: inline;
+    margin: 0;
+    width: 0;
+}
+
+p.inline_text{
+    display: inline;
+    margin-left: 0; 
+    /* OK SO WE ACTUALLY FIGURED OUT WHY IT SUCKS ITS CAUSE ITS DISPLAY INLINE BUT THAT DOESNT CHANGE THE FACT CSS IS DUMB AND I HATE IT*/
+}
+
+a.inline_link{
+    display: inline;
+    margin: 0;
+    width:100%;
+    text-align:center;
+}
+
+img{
+    width: 40%;
+}

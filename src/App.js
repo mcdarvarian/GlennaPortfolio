@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Missing from './Components/Missing/Missing';
+import ProjectList from './Components/ProjectList/ProjectList';
+import AboutMe from './Components/AboutMe/AboutMe';
+import Resume from './Components/Resume/Resume';
+import WriteUp from './Components/WriteUp/WriteUp'
 import './App.css';
 
-function App() {
+class App extends Component {
+
+  renderHomeRoute(){
+    return(
+      <>
+      <Switch>
+        <Route exact path='/' component={ProjectList} />
+        <Route exact path='/about_me' component={AboutMe}/>
+        <Route exact path='/project/:proj_name' component={WriteUp} />
+        <Route exact path='/project_list/:proj_list' component={ProjectList} />
+        <Route exact path='/resume' component={Resume} />
+        <Route component={Missing} />
+        </Switch>
+      </>
+    )
+  }
+
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>{this.renderHomeRoute()}</main>
     </div>
   );
+  }
 }
 
 export default App;

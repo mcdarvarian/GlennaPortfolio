@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Whats up fuckers! Heres how youre gonna update your portfolio!!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Not everything is final and Im still working out some of the details
 
-## Available Scripts
+So in the src folder, there is a folder titled "Contents". Info.js is going to be where all the information is collected
 
-In the project directory, you can run:
+To make a new project, copy Boilerplate.js and change the name to whatever your heart desires. 
 
-### `yarn start`
+    Title is self explanitory to make
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    Icon is going to be the main image. Make sure any new images you add are in the "images" folder within "public" and always lead your images with "/images" and then any
+        other path you may or may not have. This currently only works with pngs, if you want to make them be pdfs we can maybe make that work but as of now only pngs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    Short is going to be your small descriptions that you put on the links within the lists. Pretty straight forward
 
-### `yarn test`
+    Long is going to be the Whole ass write up and the main thing youre going to work with. As of right now it is set up to be able to simply take what you put in and 
+        translate it into html with a bit of my own translation. No need to worry about break tags to try to get the spacing between paragraphs, just hit enter and itll translate for you.
+            To make a header, start the line with "HEADD" and everything before the next time you hit enter will be the header
+            To make a link, surround the text you want to have with "<a>" Like you would html, but for this link just make the destination url the first thing you have typed  after that tag. Be sure to check the links start with "https:www." cause otherwise things bad happen
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once you have your project's file made, travel back into Info.js. Copy and paste (import proj from './proj';) and change "proj" to the what you've named your file and follow tagging instructions below.
 
-### `yarn build`
+To delete a project, simply remove the import line at the top of Info.js, as well as any references within the tags, You can delete the file as well if you want or not I dont really care. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Now for tags I understood it as a way to not have to copy and paste a shitton of html every time you make, change, or delete a project. So Instead of tags like tumblr or twitter uses, I made them lists that are going to be easier to manage how things so up while being easy to follow and read. Also dont worry about array initializing javascript is neat like that.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    "Main" is going to be your landing page projects so put your favorites there, dont worry about having more or less than 3 by accident as I'm going to make it so that the landing page only shows 3 or less depending on how much you have in there.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    The next two Tags you can change the name of at your leisure and that will automatically update the header and redirection links. Like "Main" this just takes the list of names but with no cap on how many you can put in
 
-### `yarn eject`
+    "All" is the final array and will contain every project you have. At the moment I dont have a way to automatically populate it so be sure to add any projects there as well. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you want I can also make it that your resume and About Me also automatically populate but atm they are just hard coded but we can talk about that.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Also reminder to talk about 404 page
