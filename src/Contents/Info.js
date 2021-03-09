@@ -10,11 +10,11 @@ const stuff = {
         projs: [capstone, projMain]
     },
     {
-        tag: 'Game Design', 
+        tag: 'game design', 
         projs: [capstone]
     },
     {
-        tag: 'Writing', 
+        tag: 'writing', 
         projs: [capstone, proj2]
     },
     ],

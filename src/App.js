@@ -4,7 +4,8 @@ import Missing from './Components/Missing/Missing';
 import ProjectList from './Components/ProjectList/ProjectList';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Resume from './Components/Resume/Resume';
-import WriteUp from './Components/WriteUp/WriteUp'
+import WriteUp from './Components/WriteUp/WriteUp';
+import Home from './Components/Home/Home'
 import './App.css';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
     return(
       <>
       <Switch>
-        <Route exact path='/' component={ProjectList} />
+        <Route exact path='/' component={Home} />
         <Route exact path='/about_me' component={AboutMe}/>
         <Route exact path='/project/:proj_name' component={WriteUp} />
         <Route exact path='/project_list/:proj_list' component={ProjectList} />

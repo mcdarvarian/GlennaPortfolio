@@ -33,4 +33,11 @@ Now for tags I understood it as a way to not have to copy and paste a shitton of
 
 If you want I can also make it that your resume and About Me also automatically populate but atm they are just hard coded but we can talk about that.
 
-Also reminder to talk about 404 page
+To set up thing to run on glenna's computer:
+
+download node.js
+pull the repo
+type: "npm i"
+type: "npm start" 
+
+then it should run unless it doesnt

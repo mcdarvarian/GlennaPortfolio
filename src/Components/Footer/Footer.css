@@ -1,3 +1,12 @@
 .footer p{
+    font-family: Georgia;
+    color: white;
     text-align: center;
+}
+
+.footer{
+    position: absolute;
+    width: 100vw;
+    background-color: black;
+    padding: 10px;
 }

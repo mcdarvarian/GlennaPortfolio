@@ -10,10 +10,14 @@ div.spacing{
     width: 0;
 }
 
+div.spacing_with_link{
+    margin-left:50px;
+}
+
+
 p.inline_text{
     display: inline;
     margin-left: 0; 
-    /* OK SO WE ACTUALLY FIGURED OUT WHY IT SUCKS ITS CAUSE ITS DISPLAY INLINE BUT THAT DOESNT CHANGE THE FACT CSS IS DUMB AND I HATE IT*/
 }
 
 a.inline_link{

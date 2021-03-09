@@ -48,7 +48,7 @@ class WriteUp extends Component {
                     let res = line.map(section =>{
                         if(swt){
                             swt = !swt;
-                            return(<p className='inline_text'>{section}</p>);
+                            return(<p className='inline_text'>{section}</p>)
                         } else {
                             swt = !swt;
                             let list = section.split(' ');
@@ -58,7 +58,7 @@ class WriteUp extends Component {
                         }
                         
                     })
-                    return (<div className='spacing'>{res}</div>);
+                    return (<div className='spacing_with_link'>{res}</div>);
                 } else {
                     return <div className='spacing'><p>{line}</p></div>
                 }

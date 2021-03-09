@@ -1,0 +1,64 @@
+ul.Header{
+    list-style: none;
+    margin: 0;  
+    padding: 0;
+    background-color: black;
+}
+
+.head_tab{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.auto_links{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.bar {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+.tab_1{
+    color: #ED4367;
+}
+
+.tab_2{
+    color: #FFD337;
+}
+
+.all_projs{
+    color: #663190;
+}
+  
+  .home {
+      font-family: 'Heading', Georgia, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
+      font-size: auto;
+      color: white;
+  }
+  
+  h1 {
+      font-family: Georgia;
+      font-weight: bold;
+      font-style: normal;
+      text-decoration: none;
+      font-size: auto;
+      color: white;
+  }

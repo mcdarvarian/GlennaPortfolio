@@ -3,19 +3,10 @@ import info from '../../Contents/Info';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ProjectSmall from '../ProjectSmall/ProjectSmall';
-import './ProjectList.css';
+import './Home.css';
 import { NavLink } from 'react-router-dom';
 
-class ProjectList extends Component {
-    findTab(){
-        const route = this.props.location.pathname;
-        if(route === '/'){
-            return 'Main'
-        } else {
-            return route.replace('/project_list/', '');
-        }
-    }
-
+class Home extends Component {
     organizeProjects(tab){
         let projs;
         if(tab === 'all'){
@@ -41,8 +32,7 @@ class ProjectList extends Component {
     }
 
     render(){
-        let tab = this.findTab();
-        let projs = this.organizeProjects(tab);
+        let projs = this.organizeProjects('Main');
         return(
             <div className='project_list'>
                 <Header></Header>
@@ -56,4 +46,4 @@ class ProjectList extends Component {
 
 }
 
-export default ProjectList
+export default Home

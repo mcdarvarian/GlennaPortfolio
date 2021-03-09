@@ -1,10 +1,21 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+@font-face {
+  font-family: "Heading";
+  src: url(./Font/FFF\ Tusj.ttf) format('ttf');
+  src: url(./Font/fff_tusj-webfont.woff) format("woff");
+}
+
+@font-face {  
+    font-family: "Body";
+    src: url(./Font/genbkbasr-webfont.woff) format("woff");
 }
 
 @media (prefers-reduced-motion: no-preference) {
