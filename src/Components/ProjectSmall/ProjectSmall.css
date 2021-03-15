@@ -1,0 +1,48 @@
+.proj_card_description{
+    margin:0;
+}
+
+.proj_card{
+    display: flex;
+    
+}
+
+.proj_card_title{
+    font-family: 'Heading', Georgia, sans-serif;
+    color: black;
+    margin-top: 0;
+}
+
+.proj_card_word_spacer{
+    display: inline-block;
+    vertical-align: top;
+    /*max-width: 50%;*/
+    padding-left: 5px;
+}
+
+.proj_card_img{
+    padding: 0;
+}
+
+.proj_card_description{
+    color: black;
+    text-overflow: wrap;
+}
+
+@media (max-width: 480px){
+
+    .proj_card_description{
+        font-size: 10px;
+    }
+
+    .proj_card_word_spacer{
+        /*max-width: 55%;*/
+        padding-left: 5px;
+    }
+
+    .proj_card_title{
+        margin: 0;
+        font-size: 16px;
+
+    }
+}

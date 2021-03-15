@@ -1,4 +1,39 @@
 .projs{
-    margin: 10%;
+    /*margin: 5%;*/
     background: (255, 255, 255, 0.1);
+}
+
+.proj_list_title{
+    font-family: 'Heading', Georgia, sans-serif;
+    color: black;
+    font-size: 50px;
+    /*text-align: center;*/
+}
+
+.proj_card_link{
+    text-decoration: none;
+}
+
+.dynamic_list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contents{
+    background-color: white;
+    width: 50%;
+    padding: 25px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+@media (max-width: 480px){
+    .proj_list_title{
+        text-align: center;
+    }
+
+    .contents{
+        width: 95%;
+        padding: 2.5%;
+    }
 }

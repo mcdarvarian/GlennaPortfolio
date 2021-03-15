@@ -3,43 +3,51 @@ import info from '../../Contents/Info';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ProjectSmall from '../ProjectSmall/ProjectSmall';
+import background from '../../BackgroundSplash.png'
 import './Home.css';
 import { NavLink } from 'react-router-dom';
 
 class Home extends Component {
-    organizeProjects(tab){
+    organizeProjects(tab) {
         let projs;
-        if(tab === 'all'){
+        if (tab === 'all') {
             projs = info.all;
         } else {
-            info.tags.forEach(tag =>{
-                if(tag.tag === tab){
+            info.tags.forEach(tag => {
+                if (tag.tag === tab) {
                     projs = tag.projs;
                 }
             })
         }
-        if(!!projs){
-        let res = projs.map(project =>{
-            let props ={
-                project: project
-            }
-            return <li><NavLink to={`/project/${project.title}`}><ProjectSmall props={props}></ProjectSmall></NavLink></li>
-        })
-        return res;
-    } else {
-        this.props.history.push('/Missing')
-    }
+        if (!!projs) {
+            let res = projs.map(project => {
+                let props = {
+                    project: project
+                }
+                return <li><NavLink to={`/project/${project.title}`}><ProjectSmall props={props}></ProjectSmall></NavLink></li>
+            })
+            return res;
+        } else {
+            this.props.history.push('/Missing')
+        }
     }
 
-    render(){
+    render() {
         let projs = this.organizeProjects('Main');
-        return(
-            <div className='project_list'>
-                <Header></Header>
-                <div className='projs'>
-                <ul>{projs}</ul>
+        return (
+            <div className='home_project_list'>
+                <div className='stuff'>
+                    <div className='home_background' style={{
+                        backgroundImage: `url(/images/BackgroundSplash.png)`
+                    }}>
+                        <Header></Header>
+                        <div className='home_paralax'>
+                            <div className='home_projs'>
+                                {<ul className='home_projs'>{projs}</ul>}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <Footer></Footer>
             </div>
         )
     }

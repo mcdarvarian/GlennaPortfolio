@@ -1,0 +1,23 @@
+ul.home_projs{
+    list-style: none;
+}
+
+.home_project_list{
+    background-color: black;
+    overflow: hidden;
+}
+
+.home_background{
+    min-height: 100vh;
+    filter: grayscale(100%);
+    color: opacity(100%);
+}
+
+.home_paralax{
+    min-height: 100%;
+    filter: grayscale(1%);
+}
+
+.home_projs{
+    margin-top: 0;
+}

@@ -24,6 +24,51 @@
   }
 }
 
+/*.home_paralax{
+  background-color: black;
+  background: url(./BackgroundSplash.png);
+
+  min-height: 91.5vh;
+
+  overflow: hidden;
+  
+
+/* Create the parallax scrolling effect */
+/*background-attachment: fixed;
+background-position: bottom left;
+background-repeat: no-repeat;
+background-size: 100%;
+}*/
+
+.paralax{
+  background-color: white;
+  background: white url(./BackgroundSplash.png);
+
+  min-height: 100vh;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: right bottom;
+background-repeat: no-repeat;
+background-size: 90%;
+}
+
+.content {
+	background-color: white;
+	width: 50%;
+	padding: 25px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	padding: 10px;
+}
+
+.imagecenter {
+	text-align: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

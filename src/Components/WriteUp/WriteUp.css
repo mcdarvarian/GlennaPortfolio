@@ -1,6 +1,6 @@
 p {
+    font-family: 'Body', Georgia, serif;
     margin: 0;
-    margin-left:50px;
     text-align: left;
 }
 
@@ -10,9 +10,19 @@ div.spacing{
     width: 0;
 }
 
-div.spacing_with_link{
-    margin-left:50px;
+.bump{
+    padding: 10px;
 }
+
+.section_title{
+    margin: 0;
+}
+
+.title{
+    font-family: 'Heading', Georgia, sans-serif;
+    color: black;
+}
+
 
 
 p.inline_text{

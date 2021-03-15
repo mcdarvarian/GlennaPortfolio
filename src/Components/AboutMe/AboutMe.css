@@ -1,0 +1,11 @@
+h1.am_h1{
+    color: black;
+    font-family: 'Heading', Georgia, sans-serif;
+}
+
+p.am_p{
+    margin-left:0;
+}
+#content-wrap {
+	padding-bottom: 2.5rem;
+}

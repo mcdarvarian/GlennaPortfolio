@@ -8,7 +8,8 @@ class Header extends Component {
         let tabs = info.tags;
         let result = [];
         for(let i = 1; i < 3; i++){
-            result.push(<div className='auto_links'><NavLink className='head_tab' to={`/project_list/${tabs[i].tag}`} ><li><h1 className={`tab_${i}`}>{tabs[i].tag}</h1></li></NavLink><h1 className='bar'>|</h1></div>)
+            result.push(<NavLink className='head_tab' to={`/project_list/${tabs[i].tag}`} ><li><h1 className={`tab_${i}`}>{tabs[i].tag}</h1></li></NavLink>)
+            result.push(<h1 className='bar'>|</h1>)
         }
         return result
     }
@@ -16,7 +17,7 @@ class Header extends Component {
     render(){
         let tabs = this.makeTabs();
         return(
-            <div >
+            <div className='navbar'>
                 <ul className='Header'>
                     <NavLink className='head_tab' to='/'><li><h1 className='home'>glenna greer</h1></li></NavLink>
                     {tabs}
