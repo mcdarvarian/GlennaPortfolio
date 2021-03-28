@@ -7,7 +7,7 @@ import projMain from './projMain';
 const stuff = {
     tags: [{
         tag: 'Main',
-        projs: [capstone, projMain]
+        projs: [capstone, projMain, proj2]
     },
     {
         tag: 'game design', 

@@ -4,6 +4,13 @@ p {
     text-align: left;
 }
 
+.spacing > p{
+    color: black;
+}
+.spacing > .bump > p{
+    color: black;
+}
+
 div.spacing{
     display: inline;
     margin: 0;
@@ -28,6 +35,7 @@ div.spacing{
 p.inline_text{
     display: inline;
     margin-left: 0; 
+    color:black;
 }
 
 a.inline_link{

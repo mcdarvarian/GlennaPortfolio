@@ -1,0 +1,81 @@
+.home_proj_card_description{
+    margin:0;
+}
+
+.home_proj_card{
+    display: inline-flex;
+    padding-left:2.5%;
+    padding-right: 2.5%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_proj_card_title{
+    font-family: 'Heading', Georgia, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.home_proj_card_word_spacer{
+    display: inline-block;
+    vertical-align: top;
+    /*max-width: 50%;*/
+    padding-left: 5px;
+}
+
+.home_proj_card_img{
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.img_spacing{
+    margin: auto;
+    width: 50%;
+}
+
+.home_proj_card_description{
+    color: white;
+    text-overflow: ellipsis;
+}
+
+.home_project_card{
+    display: inline;
+    width: 33%;
+}
+
+@media (max-width: 480px){
+    .home_proj_card{
+        display: block;
+    }
+
+    .home_proj_card_description{
+        font-size: 10px;
+    }
+
+    .home_proj_card_word_spacer{
+        /*max-width: 55%;*/
+        /*padding-left: 5px;*/
+    }
+
+    .home_proj_card_title{
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .img_spacing{
+        display: inline-block;
+        width: 40%;
+        margin-left:1vw;
+        margin-right: 1vw;
+    }
+
+    .home_li{
+        
+    }
+
+    .home_proj_card_word_spacer{
+        width: 55%;
+    }
+}

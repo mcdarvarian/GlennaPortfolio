@@ -1,6 +1,6 @@
 const projMain = {
     title: 'Main',
-    icon: '',
+    icon: `/images/PostcardFrontOpt1.png`,
     short: `Main`,
     long: `Main`
 }

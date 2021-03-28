@@ -1,6 +1,6 @@
 const proj2 = {
     title: 'test2',
-    icon: '',
+    icon: `/images/PostcardFrontOpt1.png`,
     short: `test2`,
     long: `test2`
 }

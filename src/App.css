@@ -24,21 +24,18 @@
   }
 }
 
-/*.home_paralax{
+.home_project_list{
   background-color: black;
-  background: url(./BackgroundSplash.png);
-
-  min-height: 91.5vh;
-
-  overflow: hidden;
+  background: black url(./BackgroundSplashGrey.png);
+  min-height: 100vh;
   
 
 /* Create the parallax scrolling effect */
-/*background-attachment: fixed;
-background-position: bottom left;
+background-attachment: fixed;
+background-position: right bottom;
 background-repeat: no-repeat;
-background-size: 100%;
-}*/
+background-size: 90%;
+}
 
 .paralax{
   background-color: white;
@@ -90,5 +87,20 @@ img {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 480px){
+  .home_project_list{
+    background-color: black;
+    background: black url(./BackgroundSplashGrey.png);
+    min-height: 100vh;
+    
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 250%;
   }
 }

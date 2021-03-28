@@ -1,23 +1,42 @@
 ul.home_projs{
+    display: flex;
+    justify-content: center;
+    font-size: auto;
     list-style: none;
 }
 
-.home_project_list{
-    background-color: black;
-    overflow: hidden;
+.home_li{
+    width: 20%;
 }
 
-.home_background{
-    min-height: 100vh;
-    filter: grayscale(100%);
-    color: opacity(100%);
-}
-
-.home_paralax{
-    min-height: 100%;
-    filter: grayscale(1%);
+.home_proj_card_link{
+    text-decoration: none;
 }
 
 .home_projs{
+    padding-top: 10%;
+    padding-left: 0;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    color: white;
+}
+
+@media(max-width: 480px){
+    ul.home_projs{
+        display: flex;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .home_li{
+        width: 100%;
+    }
+
+    .home_project_list{
+        background-size: 200%;
+    }
 }
