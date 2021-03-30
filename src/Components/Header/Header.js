@@ -4,6 +4,18 @@ import info from '../../Contents/Info';
 import './Header.css';
 
 class Header extends Component {
+
+    state = {
+        open: this.props.open
+    }
+
+    setOpen(input){
+        console.log('Hi! Im daisy!')
+        this.setState({
+            open: input
+        })
+    }
+
     makeTabs(){
         let tabs = info.tags;
         let result = [];
@@ -17,8 +29,9 @@ class Header extends Component {
     render(){
         let tabs = this.makeTabs();
         return(
-            <div className='navbar'>
+            <div className='navbar' open={this.state.open} onClick={() => this.setOpen(!this.state.open)}>
                 <ul className='Header'>
+                    <div class="hamburger">&#9776;</div>
                     <NavLink className='head_tab' to='/'><li><h1 className='home'>glenna greer</h1></li></NavLink>
                     {tabs}
                     <NavLink className='head_tab' to='/project_list/all'><li><h1 className='all_projs'>all projects</h1></li></NavLink>

@@ -23,6 +23,10 @@ ul.Header{
     background-color: black;
 }
 
+.hamburger{
+    font-size: 0;
+}
+
 .head_tab{
     display: inline-block;
     width: auto;
@@ -63,21 +67,28 @@ ul.Header{
     color: #663190;
 }
   
-  .home {
-      font-family: 'Heading', Georgia, sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      text-decoration: none;
-      margin-right: 5px;
-      font-size: auto;
-      color: white;
-  }
+.home {
+    font-family: 'Heading', Georgia, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: auto;
+    color: white;
+}
   
-  h1 {
-      font-family: Georgia;
-      font-weight: bold;
-      font-style: normal;
-      text-decoration: none;
-      font-size: auto;
-      color: white;
-  }
+h1 {
+    font-family: Georgia;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: auto;
+    color: white;
+}
+
+@media (max-width: 480px){
+    .hamburger{
+        font-size: 16px;
+        color:white;
+    }
+}

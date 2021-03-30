@@ -6,7 +6,12 @@ import ProjectSmall from '../ProjectSmall/ProjectSmall';
 import './ProjectList.css';
 import { NavLink } from 'react-router-dom';
 
-class ProjectList extends Component {
+class ProjectList extends Component {    
+  state ={
+    open: false,
+    setOpen: false
+}
+
     findTab() {
         const route = this.props.location.pathname;
         if (route === '/') {
@@ -48,7 +53,7 @@ class ProjectList extends Component {
             <div className='project_list'>
                 <div className='paralax'>
                     <div className='stuff'>
-                        <Header></Header>
+                        <Header open={this.state.open} setOpen={this.state.setOpen}></Header>
                         <div className='contents'>
                             <h1 className='proj_list_title'>{tab}</h1>
                             <div className='projs'>

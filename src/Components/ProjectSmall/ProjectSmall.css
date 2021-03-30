@@ -2,9 +2,12 @@
     margin:0;
 }
 
+.project_card{
+    margin-bottom: 20px;
+}
+
 .proj_card{
     display: flex;
-    
 }
 
 .proj_card_title{

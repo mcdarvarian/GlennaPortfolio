@@ -5,6 +5,11 @@ import './AboutMe.css'
 
 class AboutMe extends Component {
 
+	state ={
+		open: false,
+		setOpen: false
+	}
+
 render(){
 
     return (
@@ -12,7 +17,7 @@ render(){
 			<div id="content-wrap">
             <div className='paralax'>
 			
-				<Header></Header>
+				<Header open={this.state.open} setOpen={this.state.setOpen} ></Header>
 			<div className='content'>
             <h1 className='am_h1'> About Me</h1>
 			<div className = "imagecenter">

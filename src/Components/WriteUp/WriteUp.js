@@ -5,6 +5,12 @@ import './WriteUp.css';
 import Footer from '../Footer/Footer';
 
 class WriteUp extends Component {
+    
+  state ={
+    open: false,
+    setOpen: false
+}
+
     getContent() {
         let index = this.props.location.pathname.replace('/project/', '');
         let ind = -1;
@@ -96,7 +102,7 @@ class WriteUp extends Component {
         return (
             <div className='write_up'>
                 <div className='paralax'>
-                    <div><Header></Header>
+                    <div><Header open={this.state.open} setOpen={this.state.setOpen}></Header>
                         <div className='contents'>
                             {content}
                         </div>

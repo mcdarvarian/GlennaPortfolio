@@ -7,10 +7,15 @@ import './Resume.css';
 
 class Resume extends Component {
 
+    state ={
+        open: false,
+        setOpen: false
+    }
+
     render() {
         return (
             <div className='Resume'>
-                <Header></Header>
+                <Header open={this.state.open} setOpen={this.state.setOpen}></Header>
                 <div className="parallax">
                     <div className="content">
                         <h1 className='black_text'>Resume</h1>
