@@ -36,6 +36,24 @@ ul.Header{
     text-decoration: none;
 }
 
+.close_head_tab{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: x-small;
+}
+
+.close_home{
+    font-family: 'Heading', Georgia, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    margin: 5px, 0, 5px, 2px;
+    color: white;
+}
+
 .auto_links{
     display: inline-block;
     width: auto;
@@ -87,8 +105,22 @@ h1 {
 }
 
 @media (max-width: 480px){
+    ul.Header{
+        flex-direction: column;
+    }
+
+    .head_tab{
+        text-align: center;
+    }
+
     .hamburger{
         font-size: 16px;
         color:white;
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    .bar{
+        font-size: 0;
     }
 }
