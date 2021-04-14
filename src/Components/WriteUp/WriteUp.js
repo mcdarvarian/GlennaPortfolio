@@ -38,6 +38,8 @@ class WriteUp extends Component {
             //if the line is words, have it be a p
             //if the line starts with HEADD: have it be a h3
             //if line starts with IMG, find the right image and place it in appropriately
+            //if the line has <a> tags, put the link in
+            //if the line has <i> tags, put italics in
             if (line.startsWith('HEADD')) {
                 let out = line.replace('HEADD', '');
                 return <h3 className='section_title'>{out}</h3>
@@ -48,8 +50,11 @@ class WriteUp extends Component {
                 return <img src={src} alt='img alt'></img>
             } else {
                 if (sentence.indexOf("<a>") !== -1) {
-                    sentence = sentence.split('<a>');
                     let swt = true;
+                    if(sentence.indexOf("<a>") === 0){
+                        swt = false;
+                    }
+                    sentence = sentence.split('<a>');
                     let res = sentence.map(section => {
                         if (swt) {
                             swt = !swt;
@@ -62,6 +67,31 @@ class WriteUp extends Component {
                             return (<a href={link} target="_blank" className='inline_link' rel="noreferrer">{section}</a>);
                         }
 
+                    })
+                    if(line.startsWith('BUMPP')){
+                        return (<div className='spacing_with_link'><div className='bump'>{res}</div></div>);
+                    } else {
+                        return (<div className='spacing_with_link'>{res}</div>);
+                    }
+                } else if (sentence.indexOf("<i>") !== -1){
+                    let swt = true;
+                    if(sentence.indexOf("<i>") === 0){
+                        swt = false;
+                    }
+                    sentence = sentence.split("<i>");
+                    let res = sentence.map(section =>{
+                        if(section === ''){
+                            return (null);
+                        }
+                        if (swt) {
+                            console.log('here')
+                            swt = !swt;
+                            return (<p className='inline_text'>{section}</p>)
+                        } else {
+                            console.log('there')
+                            swt = !swt;
+                            return(<p className='inline_text'><i>{section}</i></p>)
+                        }
                     })
                     if(line.startsWith('BUMPP')){
                         return (<div className='spacing_with_link'><div className='bump'>{res}</div></div>);
